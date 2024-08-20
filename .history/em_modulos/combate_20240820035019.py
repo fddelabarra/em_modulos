@@ -8,8 +8,9 @@ def actualizar_poderes(poder_jugador, poder_enemigo):
     poder_enemigo -= decremento_enemigo
     return poder_jugador, poder_enemigo
 
-def estado_ronda(poder_jugador, poder_enemigo):
+def estado_ronda(poder_jugador, poder_enemigo, turno):
     """Devuelve el estado de la ronda actual como una cadena."""
+    estado = f"Turno {actualizar_poderes.turno}:\n"
     estado += f"    Poder del jugador: {poder_jugador}\n"
     estado += f"    Poder del enemigo: {poder_enemigo}"
     return estado
