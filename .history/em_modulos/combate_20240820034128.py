@@ -1,3 +1,5 @@
+# Modified Modules
+
 import random
 
 def actualizar_poderes(poder_jugador, poder_enemigo):
@@ -9,11 +11,10 @@ def actualizar_poderes(poder_jugador, poder_enemigo):
     return poder_jugador, poder_enemigo
 
 def estado_ronda(poder_jugador, poder_enemigo):
-    """Devuelve el estado de la ronda actual como una cadena."""
-    estado = f"Turno {actualizar_poderes.turno}:\n"
-    estado += f"    Poder del jugador: {poder_jugador}\n"
-    estado += f"    Poder del enemigo: {poder_enemigo}"
-    return estado
+    """Imprime el estado de la ronda actual."""
+    print(f"Turno {actualizar_poderes.turno}:")
+    print(f"    Poder del jugador: {poder_jugador}")
+    print(f"    Poder del enemigo: {poder_enemigo}")
 
 def resultado_combate(poder_jugador, poder_enemigo):
     """Determina el resultado de la batalla."""
