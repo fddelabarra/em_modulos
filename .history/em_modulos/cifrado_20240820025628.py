@@ -1,5 +1,7 @@
 import random
 
+random.seed(42)
+
 def generar_desplazamiento():
     """Genera un valor de desplazamiento aleatorio para el cifrado."""
     return random.randint(1, 3)
