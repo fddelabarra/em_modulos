@@ -17,6 +17,6 @@ def estado_ronda(poder_jugador, poder_enemigo):
 def resultado_combate(poder_jugador, poder_enemigo):
     """Determina el resultado de la batalla."""
     if poder_enemigo <= 0:
-        return "Ganaste"
+        return "Resultado final: Ganaste"
     else:
-        return "Perdiste"
+        return "Resultado final: Perdiste"
